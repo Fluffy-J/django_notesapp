@@ -5,12 +5,12 @@
     {% for title in latest_title_list %}
       <div class="card mb-3">
         <div class="card-body">
-          <p class="lead" href="{% url 'notes:detail' title.id %}">{{title.title_text }}</p>
-          
+            <p class="lead">{{title.title_text}}</p>
+            <a href="{% url 'notes:detail' title.id %}" class="btn btn-primary btn-sm">view note</a>
         </div>
       </div>
     {% endfor %}
   {% else %}
-    <p>No polls available</p>
+    <p>No Notes available</p>
   {% endif %}
 {% endblock %}
