@@ -13,5 +13,5 @@ def index(request):
 
 def detail(request, title_id):
     title = get_object_or_404(Title, pk=title_id)
-    body = title.body_set.get(pk=title.id)
+    body = title.body
     return render(request, "notes/detail.html", {"title": title, "body": body})
