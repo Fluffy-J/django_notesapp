@@ -9,8 +9,8 @@ class Title(models.Model):
 
 
 class Body(models.Model):
-    title = models.ForeignKey(Title, on_delete=models.CASCADE)
-    body_text = models.CharField(max_length=200)
+    title = models.OneToOneField(Title, on_delete=models.CASCADE)
+    body_text = models.TextField()
 
     def __str__(self):
         return self.body_text

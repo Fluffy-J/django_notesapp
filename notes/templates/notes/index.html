@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block content %} 
+  <h1 class="text-center mb-3">Hello there see the Notes ? </h1>
+  {% if latest_title_list %}
+    {% for title in latest_title_list %}
+      <div class="card mb-3">
+        <div class="card-body">
+            <p class="lead">{{title.title_text}}</p>
+            <a href="{% url 'notes:detail' title.id %}" class="btn btn-primary btn-sm">view note</a>
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No Notes available</p>
+  {% endif %}
+{% endblock %}
