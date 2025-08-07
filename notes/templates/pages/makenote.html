@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="lead text-center mb-3">Taking a Note ?</h1>
+<form action="{% url 'notes:create' %}" method="post">
+    {% csrf_token %}
+
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br><br>
+
+    <label for="body_text">Body:</label><br>
+    <textarea name="body_text" id="body_text" rows="5" cols="40"></textarea><br><br>
+
+    <button type="submit">Save Note</button>
+</form>
+{% endblock %}
