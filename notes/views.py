@@ -33,3 +33,11 @@ def create(request):
         return redirect('notes:make_note')
 
     return render(request, 'pages/makenote.html')
+
+
+def delete(request, id):
+    if request.method =='POST':
+        title = get_object_or_404(Title, id=id)
+        title.delete()
+        return redirect('notes:index')
+    return redirect('notes:detail', id =id)
