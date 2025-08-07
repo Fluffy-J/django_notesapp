@@ -5,7 +5,8 @@ Run the application using python manage.py run server
 
 # Landing Page
 See Notes button, takes you to all currently saved notes
-Notes link on Navigation bar takes you to home page
+Add a Note botton, takes you to gui to write and save note
+Notes link on top left of  Navigation bar takes you to home page
 
 # Notes Admin Area 
 Admin gui for running CRUD operations accessed through localhost/admin
