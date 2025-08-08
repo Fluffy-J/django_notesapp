@@ -11,6 +11,10 @@
 <div class="card mb-3">
         <div class="card-body">
           <p class="lead">{{ body.body_text }}</p>
+          <form action="{% url 'notes:delete' title.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Delete Note</button>
+          </form>        
         </div>
 </div>
 {% endblock %}
