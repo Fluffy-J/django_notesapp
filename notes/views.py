@@ -3,6 +3,9 @@ from django.template import loader
 from django.shortcuts import render, redirect
 from django.utils import timezone
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
 from .models import Title, Body
 
 def index(request):
@@ -41,3 +44,8 @@ def delete(request, id):
         title.delete()
         return redirect('notes:index')
     return redirect('notes:detail', id =id)
+
+
+class HelloWorldView(APIView):
+    def get(self, request):
+        return Response({"message":"hello, world !"})
