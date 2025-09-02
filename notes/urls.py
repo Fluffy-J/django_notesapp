@@ -2,6 +2,7 @@ from django.urls import path
 
 from . import views
 
+
 app_name = 'notes'
 urlpatterns = [
     path('', views.index, name='index'),
@@ -9,7 +10,5 @@ urlpatterns = [
     path('make_note/', views.make_note, name='make_note'),
     path('create/', views.create, name='create'),
     path('delete/<int:id>/', views.delete, name='delete'),
-    
-       
-    
+        
 ]
