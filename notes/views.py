@@ -49,10 +49,6 @@ def delete(request, id):
     return redirect('notes:detail', id =id)
 
 
-class HelloWorldView(APIView):
-    def get(self, request):
-        return Response({"message":"hello, world !"})
-
 class TitleListCreate(generics.ListCreateAPIView):
     queryset = Title.objects.all()
     serializer_class = Title_textSerializer
