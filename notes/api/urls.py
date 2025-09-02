@@ -1,6 +1,5 @@
 from django.urls import path
 
-from notes.views import HelloWorldView
 from notes.views import TitleListCreate
 from notes.views import NoteCreate
 from notes.views import NoteUpdate
