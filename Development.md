@@ -2,7 +2,7 @@
 This document describes the process for running this application on your local computer.
 
 # Getting started
-This webapplication is powerd by django. :rocket
+This webapplication is powerd by Django. :rocket:
 
 It runs on Windows and Linux enviorments.
 
