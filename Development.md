@@ -13,11 +13,11 @@ Once you've installed Python (which includes pip package manager), open Terminal
 git clone git@github.com:Fluffy-J/django_notesapp.git (for SSH clone)
 git clone https://github.com/Fluffy-J/django_notesapp.git (for http clone)
 
-cd django_notesapp/
-pip install pipenv
-pipenv shell
-pipenv sync
-python manage.py runserver
+- []cd django_notesapp/
+- []pip install pipenv
+- []pipenv shell
+- []pipenv sync
+- []python manage.py runserver
 
 You should now have a running server! Visit localhost:8000 in your browser.
 
