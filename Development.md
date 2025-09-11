@@ -17,22 +17,20 @@ cd django_notesapp/
 pip install pipenv
 pipenv shell
 pipenv sync
+python manage.py runserver
 
+You should now have a running server! Visit localhost:8000 in your browser.
 
+When you're ready to stop your local server, type Ctrl + C in your terminal window.
 
+Note that pipenv sync is a steps that should typically only need to be run once each time you pull the latest for a branch.
 
+. pipenv sync updates the projects Pipfile file's for dependacey management. 
 
+# README
 
+For more info about working with this site,[Read the README](./README.md)
 
-
-
-
-
-1. Activate a virtual enviorment in which you will run the application. Ensure your python and pipenv are on version 3.8.
-
-2. Insatll django and djangorestframework.
-
-3. 
 
 
 
