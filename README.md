@@ -31,7 +31,7 @@ Note that pipenv sync is a steps that should typically only need to be run once 
 
 # README
 
-For more info about working with this site,[Read the README](./README.md)
+For more info about working with this site,[Read the README](./README2.md)
 
 
 
