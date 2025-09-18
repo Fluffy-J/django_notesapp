@@ -3,13 +3,14 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
+
 class Title(models.Model):
     title_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
-        return self.title_text
+        return f"{self.title_text}({self.category.name})"
 
 
 class Body(models.Model):

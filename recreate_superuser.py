@@ -3,7 +3,7 @@ import django
 from django.contrib.auth import get_user_model
 
 # Setup Django environment
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_notesapp.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "noteapplication.settings")
 django.setup()
 
 User = get_user_model()
