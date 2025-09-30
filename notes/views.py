@@ -4,12 +4,13 @@ from django.shortcuts import render, redirect
 from django.utils import timezone
 
 from rest_framework import generics
-from notes.api.serializers import Title_textSerializer
+from notes.api.serializers import Title_textSerializer , CategorySerialzer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from .models import Title, Body
+from .models import Title, Body, Category
+from rest_framework import viewsets
 
 def index(request):
     latest_title_list = Title.objects.order_by("-pub_date")[:5]
@@ -89,3 +90,13 @@ class NoteDelete(APIView):
 
         note.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class CreateCategory(APIView):
+    def post(self, request):
+        data = request.data
+        serializer = CategorySerialzer(data=data)
+        serializer.is_valid()
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+

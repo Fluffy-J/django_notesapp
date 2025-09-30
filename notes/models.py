@@ -7,7 +7,7 @@ class Category(models.Model):
 class Title(models.Model):
     title_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField(auto_now_add=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='title', default=1)
 
     def __str__(self):
         return f"{self.title_text}({self.category.name})"
