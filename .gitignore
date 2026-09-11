@@ -16,3 +16,6 @@ env/
 # IDE
 .vscode/
 .idea/
+
+# SuperUser
+recreate_superuser.py
