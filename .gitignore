@@ -1,0 +1,21 @@
+# Environment variables / secrets
+.env
+
+# Local database
+db.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# SuperUser
+recreate_superuser.py
