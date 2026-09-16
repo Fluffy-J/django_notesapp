@@ -21,4 +21,4 @@ env/
 recreate_superuser.py
 
 #Static files
-staticfiles/ 
+staticfiles/
