@@ -17,5 +17,8 @@ env/
 .vscode/
 .idea/
 
-# SuperUser
+# Super User
 recreate_superuser.py
+
+#Static files
+staticfiles/ 
