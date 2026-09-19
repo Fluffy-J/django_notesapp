@@ -1,3 +1,2 @@
 #!/bin/bash
-python manage.py flush --noinput
-python recreate_superuser.py
+python manage.py migrate --noinput
