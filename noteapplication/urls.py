@@ -24,5 +24,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
 ]
-
-app_name = 'notes_api'
