@@ -1,6 +1,5 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, redirect
 from django.template import loader
-from django.shortcuts import render, redirect
 from django.utils import timezone
 
 from rest_framework import generics
@@ -13,7 +12,6 @@ from .models import Title, Body
 
 def index(request):
     latest_title_list = Title.objects.order_by("-pub_date")[:5]
-    template = loader.get_template("notes/index.html")
     context = {"latest_title_list": latest_title_list}
     return render(request, "notes/index.html", context)
 
@@ -46,7 +44,7 @@ def delete(request, id):
         title = get_object_or_404(Title, id=id)
         title.delete()
         return redirect('notes:index')
-    return redirect('notes:detail', id =id)
+    return redirect('notes:detail', title_id =id)
 
 
 class TitleListCreate(generics.ListCreateAPIView):

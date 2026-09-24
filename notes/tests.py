@@ -99,6 +99,17 @@ class NoteWebViewTests(TestCase):
             Body.objects.filter(id=self.body.id).exists()
         )
         
+    def test_delete_note_with_get_does_not_delete_note(self):
+        response = self.client.get(
+            f'/notes/delete/{self.title.id}/'
+        )
+
+        self.assertEqual(response.status_code, 302)
+
+        self.assertTrue(
+            Title.objects.filter(id=self.title.id).exists()
+        )
+    
 class NoteAPITests(APITestCase):
 
     def setUp(self):
