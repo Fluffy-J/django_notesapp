@@ -1,5 +1,4 @@
 from django.shortcuts import get_object_or_404, render, redirect
-from django.template import loader
 from django.utils import timezone
 
 from rest_framework import generics
