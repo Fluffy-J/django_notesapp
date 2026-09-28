@@ -5,7 +5,7 @@ from notes.views import NoteCreate
 from notes.views import NoteUpdate
 from notes.views import NoteDelete
 
-app_name = 'notes'
+app_name = 'notes_api'
 urlpatterns = [
    path('log/', TitleListCreate.as_view(), name='note-list'),
    path('makenote/', NoteCreate.as_view(),name='create'),
