@@ -22,6 +22,3 @@ recreate_superuser.py
 
 #Static files
 staticfiles/
-
-#Cache
-__pycache__
