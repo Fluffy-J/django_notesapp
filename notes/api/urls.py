@@ -1,9 +1,11 @@
 from django.urls import path
 
-from notes.views import TitleListCreate
-from notes.views import NoteCreate
-from notes.views import NoteUpdate
-from notes.views import NoteDelete
+from .views import (
+    TitleListCreate,
+    NoteCreate,
+    NoteUpdate,
+    NoteDelete,
+)
 
 app_name = 'notes_api'
 urlpatterns = [
