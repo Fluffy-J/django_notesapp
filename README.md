@@ -126,7 +126,7 @@ The application also exposes a REST API for programmatic interaction with the no
 
 ### Application Interface
 
-<img width="1593" height="872" alt="image" src="https://github.com/user-attachments/assets/e9e6ecef-f0b3-4f3e-8d79-c8617f3c5223" />
+<img width="1333" height="2000" alt="interface" src="https://github.com/user-attachments/assets/6b8a52c4-1545-4c13-af5c-119c25a5703f" />
 
 ### Create Note
 
