@@ -116,8 +116,7 @@ http://127.0.0.1:8000/
 
 The application provides a browser interface for managing notes.
 
-<img width="1071" height="281" alt="image" src="https://github.com/user-attachments/assets/b32ec867-58ca-439d-95c3-cc731e96efe1" />
-
+<img width="1720" height="877" alt="image" src="https://github.com/user-attachments/assets/10d34492-1f1a-41c8-9ede-5364475873da" />
 
 Users can create a note containing a title and body, view individual notes, and delete notes.
 
@@ -127,13 +126,11 @@ The application also exposes a REST API for programmatic interaction with the no
 
 ### Application Interface
 
-<img width="1065" height="667" alt="image" src="https://github.com/user-attachments/assets/9d870fdc-40c3-4211-99ab-8f12a192dd75" />
-
+<img width="1593" height="872" alt="image" src="https://github.com/user-attachments/assets/e9e6ecef-f0b3-4f3e-8d79-c8617f3c5223" />
 
 ### Create Note
 
-<img width="822" height="541" alt="image" src="https://github.com/user-attachments/assets/c77b2aea-3b6f-42e9-aac4-c9e8fc207082" />
-
+<img width="1596" height="872" alt="image" src="https://github.com/user-attachments/assets/b681a031-ce84-442b-aab3-6999796b178c" />
 
 ### API
 
